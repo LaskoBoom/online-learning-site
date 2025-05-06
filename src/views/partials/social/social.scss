@@ -1,0 +1,39 @@
+.social {
+    font-family: 'poppins', sans-serif;
+    width: 160px;
+    height: 82px;
+
+    @media (min-width: 992px) {
+        width: 276px;
+        height: 190px;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 5px;
+        padding-bottom: 16px;
+        align-items: end;
+
+        @media (min-width: 992px) {
+            padding-bottom: 21px;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        gap: 24px;
+        align-items: end;
+    }
+
+    &__description {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 32px;
+        }
+    }
+}

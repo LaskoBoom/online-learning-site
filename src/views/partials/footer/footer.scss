@@ -1,0 +1,107 @@
+.footer {
+    display: flex;
+    background: #1B353D;
+
+    &__layout {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        color: white;
+        padding-top: 33px;
+        padding-bottom: 44px;
+        font-family: 'poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+
+        @media (min-width: 992px) {
+            order: 2;
+            flex: 0 0 auto;
+            padding-top: 75px;
+            padding-bottom: 64px;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        padding-right: 67px;;
+        gap: 16px;
+
+        @media (min-width: 992px) {
+            padding-right: 96px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        display: block;
+        font-weight: 600;
+    }
+
+    &__label-company {
+        display: block;
+        padding-bottom: 24px;
+        font-weight: 600;
+    }
+
+    &__link {
+        text-decoration: none;
+        padding-bottom: 12px;
+        color: white;
+    }
+
+    &__link-email {
+        color: white;
+    }
+
+    &__social {
+        padding-bottom: 70px;
+
+        @media (min-width: 992px) {
+            order: 1;
+            flex: 0 0 auto;
+            padding-bottom: 0;
+            padding-top: 75px;
+            padding-right: 442px;
+            margin-top: 11px;
+        }
+    }
+
+    &__branding {
+        padding-bottom: 31px;
+
+        @media (min-width: 992px) {
+            order: 4;
+            flex: 1 1 100%;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    &__subscribe {
+        padding-top: 63px;
+
+        @media (min-width: 992px) {
+            display: flex;
+            order: 3;
+            flex: 1 1 100%;
+            padding-top: 0;
+            padding-bottom: 63px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.branding {
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            gap: 32px;
+        }
+    }
+
+    &__logo {
+        padding-bottom: 12px;
+    }
+
+    &__tagline {
+        color: white;
+        font-family: 'poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}

@@ -9,6 +9,7 @@
         @media (min-width: 992px) {
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
@@ -26,6 +27,7 @@
             flex: 0 0 auto;
             padding-top: 75px;
             padding-bottom: 64px;
+            padding-right: 100px;
         }
     }
 
@@ -71,11 +73,12 @@
 
         @media (min-width: 992px) {
             order: 1;
-            flex: 0 0 auto;
+            flex: 1 0 auto;
             padding-bottom: 0;
             padding-top: 75px;
-            padding-right: 442px;
+            padding-left: 100px;
             margin-top: 11px;
+            max-width: 355px;
         }
     }
 
@@ -87,6 +90,7 @@
             flex: 1 1 100%;
             padding-top: 32px;
             padding-bottom: 32px;
+            padding-left: 100px;
         }
     }
 
@@ -97,7 +101,7 @@
             display: flex;
             order: 3;
             flex: 1 1 100%;
-            padding-top: 0;
+            padding-top: 50px;
             padding-bottom: 63px;
             justify-content: center;
             align-items: center;

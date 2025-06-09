@@ -2,6 +2,15 @@
     
     console.log("Hello World!");
 
+    const menuLinks = document.querySelectorAll('[data-button="menu-link"]')
+    console.log(menuLinks);
+    menuLinks.forEach((link) => {
+        console.log(link)
+        link.addEventListener('click', () => {
+            navigation.classList.remove('active');
+        })
+    })
+
     const subscribeButton = document.querySelector('[data-button="subscribe"]')
     console.log(subscribeButton);
     subscribeButton.addEventListener('click', () => {

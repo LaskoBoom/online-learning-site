@@ -1,0 +1,55 @@
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #B8B8B8;
+    border-radius: 3.79px;
+    width: 100%;
+    max-width: 317px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 38px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding-top: 30px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+
+        @media (min-width: 992px) {
+            gap: 35px;
+        }
+    }
+
+    &__media {
+        flex-shrink: 0;
+        padding-top: 4px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        color: #333333;
+    }
+
+    p {
+        font-size: 15px;
+        color: #333333;
+    }
+}

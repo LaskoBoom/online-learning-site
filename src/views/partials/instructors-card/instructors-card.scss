@@ -1,0 +1,51 @@
+.instructors-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 165px;
+    height: 165px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+    @media (min-width: 992px) {
+        max-width: 297px;
+        height: 297px;
+    }
+
+    &__photo-container {
+        padding-bottom: 18px;
+    }
+
+    &__photo {
+        max-width: 30px;
+        max-height: 30px;
+
+        @media (min-width: 992px) {
+            max-width: 56px;
+            max-height: 56px;
+        }
+    }
+
+    &__job {
+        padding-bottom: 4px;
+    }
+
+    h3 {
+        font-size: 16px;
+
+        @media (min-width: 992px) {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        color: #495057;
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+        }
+    }
+}

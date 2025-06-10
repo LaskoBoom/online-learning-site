@@ -1,4 +1,26 @@
 {
-    "title": "Homepage",
-    "content": "My Homepage Content!"
+  "title": "Homepage",
+  "content": "My Homepage Content!",
+  "instructors": [
+    {
+      "photo": "/instructor-khatam.png",
+      "job": "DATA ANALYST",
+      "name": "Prof. W.J Khatam"
+    },
+    {
+      "photo": "/instructor-kofi.png",
+      "job": "UX DESIGNER",
+      "name": "Prof Kaif Kofi"
+    },
+    {
+      "photo": "/instructor-maryam.png",
+      "job": "SOFTWARE DEVELOPER",
+      "name": "Prof. Maryam J"
+    },
+    {
+      "photo": "/instructor-oluwole.png",
+      "job": "PSYCHOLOGIST",
+      "name": "Mr. Oluwole B.O"
+    }
+  ]
 }

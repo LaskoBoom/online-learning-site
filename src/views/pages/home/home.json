@@ -1,6 +1,32 @@
 {
   "title": "Homepage",
   "content": "My Homepage Content!",
+  "publications": [
+    {
+      "photo": "/pub-carousel-photo01.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo02.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo03.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo04.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo01.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo02.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo03.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo04.jpg"
+    }
+  ],
   "instructors": [
     {
       "photo": "/instructor-khatam.png",
@@ -10,7 +36,7 @@
     {
       "photo": "/instructor-kofi.png",
       "job": "UX DESIGNER",
-      "name": "Prof Kaif Kofi"
+      "name": "Prof. Kaif Kofi"
     },
     {
       "photo": "/instructor-maryam.png",

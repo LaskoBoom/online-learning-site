@@ -1,0 +1,82 @@
+<div class="publications-carousel">
+
+    <div class="publications-carousel__container">
+
+        <div class="publications-carousel__layout">
+
+            <div class="publications-carousel__title">
+
+                <h1>Recent Publications</h1>
+
+            </div>
+
+            <div class="publications-carousel__list" data-carousel="publications">
+
+                <div class="publications-carousel__container">
+
+                    {{#each publications}}
+                    
+                        <div class="publications-carousel__item">
+                            {{> publications-card this}}
+                        </div>
+                    
+                    {{/each}}
+
+                </div>
+
+                <div class="publications-carousel__buttons">
+
+                    <button class="publications-carousel__button" aria-label="Scroll left" data-button="left">
+
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="30" fill="black" fill-opacity="0.2"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5996 37.9996L25.5996 29.9996L37.5996 21.9996C37.7572 21.8946 37.8926 21.7595 37.998 21.6022C38.1034 21.4448 38.1767 21.2682 38.2139 21.0825C38.251 20.8968 38.2512 20.7056 38.2144 20.5198C38.1777 20.334 38.1047 20.1572 37.9996 19.9996C37.8946 19.8421 37.7595 19.7067 37.6021 19.6013C37.4448 19.4959 37.2682 19.4226 37.0825 19.3854C36.8968 19.3483 36.7056 19.3481 36.5198 19.3848C36.334 19.4216 36.1572 19.4946 35.9996 19.5996L22.3964 28.6684C22.1773 28.8146 21.9976 29.0125 21.8734 29.2447C21.7491 29.477 21.6841 29.7363 21.6841 29.9996C21.6841 30.263 21.7491 30.5223 21.8734 30.7546C21.9976 30.9868 22.1773 31.1847 22.3964 31.3308L35.9996 40.3996C36.1572 40.5047 36.334 40.5777 36.5198 40.6144C36.7056 40.6512 36.8968 40.651 37.0825 40.6139C37.2682 40.5767 37.4448 40.5034 37.6021 40.398C37.7595 40.2926 37.8946 40.1572 37.9996 39.9996C38.1047 39.8421 38.1777 39.6653 38.2144 39.4795C38.2512 39.2937 38.251 39.1025 38.2139 38.9168C38.1767 38.7311 38.1034 38.5545 37.998 38.3971C37.8926 38.2398 37.7572 38.1047 37.5996 37.9996Z" fill="white"/>
+                        </svg>
+
+                    </button>
+
+                    <button class="publications-carousel__button" aria-label="Scroll right" data-button="right">
+
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="30" transform="matrix(-1 0 0 1 60 0)" fill="black" fill-opacity="0.2"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4004 37.9996L34.4004 29.9996L22.4004 21.9996C22.2428 21.8946 22.1074 21.7595 22.002 21.6022C21.8966 21.4448 21.8233 21.2682 21.7861 21.0825C21.749 20.8968 21.7488 20.7056 21.7856 20.5198C21.8223 20.334 21.8953 20.1572 22.0004 19.9996C22.1054 19.8421 22.2405 19.7067 22.3979 19.6013C22.5552 19.4959 22.7318 19.4226 22.9175 19.3854C23.1032 19.3483 23.2944 19.3481 23.4802 19.3848C23.666 19.4216 23.8428 19.4946 24.0004 19.5996L37.6036 28.6684C37.8227 28.8146 38.0024 29.0125 38.1266 29.2447C38.2509 29.477 38.3159 29.7363 38.3159 29.9996C38.3159 30.263 38.2509 30.5223 38.1266 30.7546C38.0024 30.9868 37.8227 31.1847 37.6036 31.3308L24.0004 40.3996C23.8428 40.5047 23.666 40.5777 23.4802 40.6144C23.2944 40.6512 23.1032 40.651 22.9175 40.6139C22.7318 40.5767 22.5552 40.5034 22.3979 40.398C22.2405 40.2926 22.1054 40.1572 22.0004 39.9996C21.8953 39.8421 21.8223 39.6653 21.7856 39.4795C21.7488 39.2937 21.749 39.1025 21.7861 38.9168C21.8233 38.7311 21.8966 38.5545 22.002 38.3971C22.1074 38.2398 22.2428 38.1047 22.4004 37.9996Z" fill="white"/>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+        const emblaNode = document.querySelector('[data-carousel="publications"]')
+        const buttonLeftNode = document.querySelector('[data-button="left"]')
+        const buttonRightNode = document.querySelector('[data-button="right"]')
+        const options = {
+            loop: true,
+            slidesToScroll: 1,
+            startIndex: 0,
+            align: 'start',
+        }
+        const emblaApi = EmblaCarousel(emblaNode, options)
+
+        buttonLeftNode.addEventListener('click', () => {
+        console.log('click left button')
+        emblaApi.scrollPrev()
+    }, false)
+
+    buttonRightNode.addEventListener('click', () => {
+        console.log('click right button')
+        emblaApi.scrollNext()
+    }, false)
+
+    console.log(emblaApi.slideNodes()) // Access API
+    console.log(buttonLeftNode)
+    console.log(buttonRightNode)
+</script>

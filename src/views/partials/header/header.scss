@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 2;
 
     @media (max-width: 991px) {
         position: fixed;

@@ -1,0 +1,65 @@
+.publications-carousel {
+    position: relative;
+
+    @media (min-width: 992px) {
+        
+    }
+
+    &__container {
+        display: flex;
+        width: 100%;
+        max-width: 396px;
+        gap: 8px;
+        padding-left: 8px;
+
+        @media (min-width: 992px) {
+            max-width: 1242px;
+            gap: 38px;
+            padding-left: 38px;
+        }
+    }
+
+    &__title h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333333;
+        text-align: center;
+        padding-bottom: 25px;
+
+        @media (min-width: 992px) {
+            font-size: 60px;
+            font-weight: 700;
+            padding-bottom: 100px;
+        }
+    }
+
+    &__list {
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    &__buttons {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            top: 40%;
+            left: 11px;
+            right: 75px;
+        }
+    }
+
+    &__button {
+        display: block;
+        border-radius: 100%;
+        opacity: 80%;
+
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+        }
+    }
+}

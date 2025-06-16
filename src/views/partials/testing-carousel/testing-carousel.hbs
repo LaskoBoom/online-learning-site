@@ -1,32 +1,26 @@
-<div class="publications-carousel">
+<div class="testing-carousel">
 
     <div class="container">
 
-        <div class="publications-carousel__layout">
+        <div class="testing-carousel__layout">
 
-            <div class="publications-carousel__title">
+            <div class="testing-carousel__list" data-carousel="testing">
 
-                <h1>Recent Publications</h1>
+                <div class="testing-carousel__container">
 
-            </div>
-
-            <div class="publications-carousel__list" data-carousel="publications">
-
-                <div class="publications-carousel__container">
-
-                    {{#each publications}}
+                    {{#each testing}}
                     
-                        <div class="publications-carousel__item">
-                            {{> publications-card this}}
+                        <div class="testing-carousel__item">
+                            {{> testing-card this}}
                         </div>
                     
                     {{/each}}
 
                 </div>
 
-                <div class="publications-carousel__buttons">
+                <div class="testing-carousel__buttons">
 
-                    <button class="publications-carousel__button" aria-label="Scroll left" data-button="left">
+                    <button class="testing-carousel__button" aria-label="Scroll left" data-button="left">
 
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="60" height="60" rx="30" fill="black" fill-opacity="0.2"/>
@@ -35,7 +29,7 @@
 
                     </button>
 
-                    <button class="publications-carousel__button" aria-label="Scroll right" data-button="right">
+                    <button class="testing-carousel__button" aria-label="Scroll right" data-button="right">
 
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="60" height="60" rx="30" transform="matrix(-1 0 0 1 60 0)" fill="black" fill-opacity="0.2"/>
@@ -55,26 +49,26 @@
 </div>
 
 <script type="text/javascript">
-  const publicationsCarousel = document.querySelector('[data-carousel="publications"]')
+  const testingCarousel = document.querySelector('[data-carousel="testing"]')
 
-  if (publicationsCarousel) {
-    const buttonLeftNode = publicationsCarousel.querySelector('[data-button="left"]')
-    const buttonRightNode = publicationsCarousel.querySelector('[data-button="right"]')
+  if (testingCarousel) {
+    const buttonLeftNode = testingCarousel.querySelector('[data-button="left"]')
+    const buttonRightNode = testingCarousel.querySelector('[data-button="right"]')
     const options = {
       loop: true,
       slidesToScroll: 1,
       startIndex: 0,
       align: 'start',
     }
-    const emblaApi = EmblaCarousel(publicationsCarousel, options)
+    const emblaApi = EmblaCarousel(testingCarousel, options)
 
     buttonLeftNode.addEventListener('click', () => {
-      console.log('click left button (publications)')
+      console.log('click left button (testing)')
       emblaApi.scrollPrev()
     })
 
     buttonRightNode.addEventListener('click', () => {
-      console.log('click right button (publications)')
+      console.log('click right button (testing)')
       emblaApi.scrollNext()
     })
   }

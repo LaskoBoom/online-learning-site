@@ -1,4 +1,4 @@
-.publications-carousel {
+.testing-carousel {
     position: relative;
 
     &__container {
@@ -9,31 +9,20 @@
         padding-left: 8px;
 
         @media (min-width: 992px) {
-            max-width: 1242px;
+            max-width: 100%;
             gap: 38px;
             padding-left: 38px;
         }
     }
 
-    &__title h1 {
-        font-size: 24px;
-        font-weight: 600;
-        color: #333333;
-        text-align: center;
-        padding-bottom: 25px;
-
-        @media (min-width: 992px) {
-            font-size: 60px;
-            font-weight: 700;
-            padding-bottom: 100px;
-        }
+    &__item {
+        display: flex;
     }
 
     &__list {
         overflow: hidden;
         position: relative;
     }
-
 
     &__buttons {
         display: none;

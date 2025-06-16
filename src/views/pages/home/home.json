@@ -1,6 +1,32 @@
 {
   "title": "Homepage",
   "content": "My Homepage Content!",
+  "testing": [
+    {
+      "photo": "/testing-card-photo01.jpg"
+    },
+    {
+      "photo": "/testing-card-photo02.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo03.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo04.jpg"
+    },
+    {
+      "photo": "/testing-card-photo01.jpg"
+    },
+    {
+      "photo": "/testing-card-photo02.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo03.jpg"
+    },
+    {
+      "photo": "/pub-carousel-photo04.jpg"
+    }
+  ],
   "publications": [
     {
       "photo": "/pub-carousel-photo01.jpg"

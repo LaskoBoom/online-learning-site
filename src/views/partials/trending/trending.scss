@@ -1,4 +1,4 @@
-.publications {
+.trending {
     display: flex;
 
     &__layout {
@@ -8,8 +8,7 @@
         @media (min-width: 992px) {
             display: flex;
             flex-direction: row;
-            gap: clamp(24px, 4vw, 94px);
-            padding-bottom: 140px;
+            gap: clamp(24px, 2vw, 94px);
         }
     }
 
@@ -18,7 +17,7 @@
         @media (min-width: 992px) {
             display: flex;
             flex-direction: column;
-            order: 2;
+            order: 1;
         }
     }
 
@@ -64,7 +63,7 @@
 
         @media (min-width: 992px) {
             display: flex;
-            order: 1;
+            order: 2;
             width: 100%;
             max-width: 604px;
             height: 542px;

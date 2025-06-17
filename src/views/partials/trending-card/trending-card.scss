@@ -1,0 +1,14 @@
+.trending-card {
+    display: flex;
+    flex-shrink: 0;
+
+    &__photo {
+        width: 120px;
+        height: 130px;
+
+        @media (min-width: 992px) {
+            width: 269px;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.cta-form {
+    display: flex;
+    flex-direction: column;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+
+        @media (min-width: 992px) {
+            gap: 32px;
+            align-items: center;
+        }
+    }
+
+    &__title h2 {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: flex;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333333;
+            padding-bottom: 64px;
+            padding-top: 38px;
+            justify-content: center;
+        }
+    }
+
+    &__form-name,
+    &__form-email,
+    &__form-tel,
+    &__form-select {
+        width: 100%;
+        max-width: 395px;
+        height: 48px;
+        border: 1px solid #B8B8B8;
+        border-radius: 3.79px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: #F2F2F2;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    &__form-name,
+    &__form-email,
+    &__form-tel {
+        color: #000;
+
+        @media (min-width: 992px) {
+            max-width: 521px;
+            height: 60px;
+        }
+    }
+
+    &__form-select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        background-image: url('/public/dropdown-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-color: #F2F2F2;
+
+        padding: 0.75rem 2.5rem 0.75rem 1rem;
+        cursor: pointer;
+        color: #8B8B8B; // default: placeholder color
+
+        &:focus {
+            outline: 2px solid #333;
+            outline-offset: 2px;
+        }
+
+        // Once a valid option is selected, change text color to black
+        &:not(:invalid) {
+            color: #000;
+        }
+
+        option {
+            color: #000; // dropdown options
+        }
+
+        option[disabled] {
+            color: #aaa; // placeholder in dropdown
+        }
+
+        @media (min-width: 992px) {
+            max-width: 521px;
+            height: 60px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 396px;
+        height: 52px;
+        border-radius: 3.79px;
+        background-color: #1B353D;
+        color: white;
+        font-family: 'open sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+
+        @media (min-width: 992px) {
+            max-width: 521px;
+            height: 60px;
+        }
+    }
+    
+}
+
